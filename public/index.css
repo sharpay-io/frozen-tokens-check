@@ -1,0 +1,24 @@
+body {
+	background-color: #373737;
+	font-family: Verdana, Geneva, sans-serif !important;
+	color: #efefef;
+	font-size: 14px;
+	margin: 50px;
+}
+h1, h2, b, strong { color: #ff9a1e; }
+h1 {
+	border-bottom: 1px #efefef solid;
+	padding-bottom: 10px;
+}
+h2 { margin-top: 30px; }
+h4 { margin-bottom: 10px; }
+
+a { color: efefef; text-decoration:none; }
+a:hover { text-decoration: underline; }
+
+.addr { margin-left: 25px; }
+
+.lock-up { margin: 0px; padding: 0px; }
+ul { margin-top: 3px; }
+
+.logo { width: 230px; }

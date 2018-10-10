@@ -1,0 +1,34 @@
+html(lang="en")
+	head
+		title Sharpay Tokens
+		meta(charset="utf-8")
+		link(rel="stylesheet", href="/public/index.css", type="text/css")
+		link(href="/public/favicon.ico", rel="shortcut icon", type="image/x-icon")
+		
+	body
+		h1
+			img.logo(src="/public/logo.svg")
+		
+		ul
+			li total supply &rarr;  #{tokenSupply.toLocaleString()} S
+		
+		h2 Sharpay Token Freezes:
+		ul
+			li total frozen &rarr; #{tokenFrozen.toLocaleString()} S (#{Math.round(tokenFrozen/tokenSupply*10000)/100} %)
+	
+		each item in releasesByAddress
+			div.addr
+				h4  
+					strong #{item.purpose}
+					span  - 
+					a(href="https://etherscan.io/address/" + item.addr + "#tokentxns" target="_blanc")  #{item.addr}
+				p.lock-up lock-up period
+				ul
+					each balance, dt in item.releases
+						li #{dt} &rarr; #{balance.toLocaleString()} S (#{Math.round(balance/tokenSupply*10000)/100} %)
+		
+		h2 Sharpay Token Release Dates:
+		p.lock-up lock-up period
+		ul
+			each sum, dt in releasesByDate
+				li #{dt} &rarr; #{sum.toLocaleString()} S (#{Math.round(sum/tokenSupply*10000)/100} %)
