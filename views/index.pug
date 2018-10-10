@@ -10,6 +10,8 @@ html(lang="en")
 			img.logo(src="/public/logo.svg")
 		
 		ul
+			li token contract &rarr; 
+				a(href="https://etherscan.io/token/0x96B0bF939D9460095C15251F71Fda11e41DcBddB" target="_blanc") 0x96B0bF939D9460095C15251F71Fda11e41DcBddB
 			li total supply &rarr;  #{tokenSupply.toLocaleString()} S
 		
 		h2 Sharpay Token Freezes:
@@ -32,3 +34,7 @@ html(lang="en")
 		ul
 			each sum, dt in releasesByDate
 				li #{dt} &rarr; #{sum.toLocaleString()} S (#{Math.round(sum/tokenSupply*10000)/100} %)
+				
+		p.footer
+			small See source code of this script  
+				a(href="https://github.com/sharpay-io/frozen-tokens-check/blob/master/index.js" target="_blanc") here on Github 

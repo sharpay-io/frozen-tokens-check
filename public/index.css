@@ -13,8 +13,10 @@ h1 {
 h2 { margin-top: 30px; }
 h4 { margin-bottom: 10px; }
 
-a { color: efefef; text-decoration:none; }
-a:hover { text-decoration: underline; }
+a { color: efefef; }
+a:hover { color: #1e9a1e; }
+
+li { margin-bottom: 5px;}
 
 .addr { margin-left: 25px; }
 
@@ -22,3 +24,5 @@ a:hover { text-decoration: underline; }
 ul { margin-top: 3px; }
 
 .logo { width: 230px; }
+
+.footer { border-top: 1px #efefef solid; padding-top: 10px; margin-top: 50px; }
