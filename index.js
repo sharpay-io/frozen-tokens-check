@@ -60,7 +60,7 @@ async function getHolds() {
 
 var express = require('express');
 var app = express();
-var port = 80;
+var port = process.env.PORT || 8080;
 
 app.get('/', async function (req, res) {
 
