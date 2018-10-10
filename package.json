@@ -1,0 +1,23 @@
+{
+  "name": "frozen-tokens-check",
+  "version": "1.0.0",
+  "description": "Check Sharpay token freeze status",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharpay-io/frozen-tokens-check.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/sharpay-io/frozen-tokens-check/issues"
+  },
+  "homepage": "https://github.com/sharpay-io/frozen-tokens-check#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "web3": "^1.0.0-beta.36"
+  }
+}
