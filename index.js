@@ -1,5 +1,5 @@
 var Web3 = require('web3');
-var web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/'));
+var web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/v3/37f1c7fe4795435db1911a270371bb59'));
 const path = require('path');
 
 var pulls = {
